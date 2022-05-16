@@ -29,9 +29,9 @@ int (*get_func(const char *format))(va_list)
         };
 
         i = 0;
-        while (type[i].t[0])
+        while (type[i].x[0])
         {
-                if (type[i].t[0] == *format)
+                if (type[i].x[0] == *format)
                 {
                         break;
                 }
@@ -64,10 +64,10 @@ int _printf(const char *format, ...)
 		}
 		if (!format[i])
 			return (count);
-		f = get_func(&format[i + 1]);
-		if (f != NULL)
+		func = get_func(&format[i + 1]);
+		if (func != NULL)
 		{
-			count += f(arg);
+			count += func(arg);
 			i += 2;
 			continue;
 		}
@@ -79,7 +79,7 @@ int _printf(const char *format, ...)
 		{
 			if (format[i + 1] == '%')
 			{
-				f = get_func(&format[i + i]);
+				func = get_func(&format[i + i]);
 				break;
 			}
 			i++;

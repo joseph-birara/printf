@@ -4,6 +4,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdio.h>
 /**
  * struct print - structure for printing various data types
  * @t: data type to be printed

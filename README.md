@@ -6,28 +6,32 @@ Printf function is a function that is defined in the stdio.h header file and use
 ### Format Specifiers
 format specifiers are special set of placeholders used to represent a parameter to be passed in the function of printf.
 The following are some of the format specifiers we use in printf function.
-* **%c
+* %c
         * print a single character %d print a decimal (base 10) number 
 
-* **%e
+
+* %e
         * print an exponential floating-point number
-* **%f
+* f
         * print a floating-point number 
-* **%g
+
+* %g
         * print a general-format floating-point number
-* **%i
+* %i
         * print an integer in base 10 
-* **%o
+* %o
         * print a number in octal (base 8)
-* **%s
+* %s
         * print a string of characters 
-* **%u
+* %u
         * print an unsigned decimal (base 10) number
-* **%x
+* %x
         * print a number in hexidecimal (base 16) 
-* **%%
+* %%
         *print a percent sign (\% also works)
-##collaborators(Authors)
+
+
+## collaborators(Authors)
          Kaleab Girma @codeWithKal
                           kaleabshiferaw51@gmail.com
          Joseph Mulugeta @joseph-birara

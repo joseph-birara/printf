@@ -43,7 +43,6 @@ int run_printf(const char *format, va_list args, buffer_t *output)
 			prec = handle_precision(args, format + i + tmp + 1,
 					&tmp);
 			len = handle_length(format + i + tmp + 1, &tmp);
-
 			f = handle_specifiers(format + i + tmp + 1);
 			if (f != NULL)
 			{
